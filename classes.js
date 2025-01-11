@@ -1,11 +1,7 @@
 class Sprite {
-    constructor({position, color = 'red'}){
+    constructor({position, color = 'red', imageSrc}){
         this.position = position
         this.color = color
-        this.position = {
-            x: this.position.x,
-            y: this.position.y
-        }
         this.velocity = {
             x: 0,
             y: 0
@@ -20,6 +16,8 @@ class Sprite {
         this.right = false
         this.shot = false
         this.jumps = 2
+        this.image = new Image()
+        this.image.src = imageSrc
     }
     draw() {
         c.fillStyle = this.color
