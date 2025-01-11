@@ -14,6 +14,10 @@ window.addEventListener('keydown', event => {
         break
         case ' ':
             player.shot = true
+        break 
+        case 's':
+            player.velocity.y = 50
+        break
     }
 })
 
