@@ -9,7 +9,8 @@ const player = new Sprite({
         x: 0,
         y: 0
     },
-    color: 'green'
+    color: 'green',
+    imageSrc: './player.png'
 })
 const enemy = new Sprite({
     position: {
